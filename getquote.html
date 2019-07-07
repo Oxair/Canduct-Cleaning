@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Can Duct Cleaning | Get Quote</title>
+<link rel="shortcut icon" href="assets/imgs/favicon.png">
+<link rel="stylesheet" href="assets/css/master.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+
+<!--=== Loader Start ======-->
+<div id="loader-overlay">
+  <div class="loader-wrapper">
+    <div class="arcon-pulse"></div>
+  </div>
+</div>
+<!--=== Loader End ======-->
+
+<!--=== Wrapper Start ======-->
+<div class="wrapper">
+
+  <!--=== Header Start ===-->
+  <nav class="navbar navbar-default navbar-fixed white bootsnav on no-full">
+    
+    <div class="container">
+      <!--=== Start Header Navigation ===-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
+        <div class="logo"> <a href="index.html" class="page-scroll"> <img class="logo logo-display" src="assets/imgs/header-logo.png" alt=""> <img class="logo logo-scrolled" src="assets/imgs/header-logo.png" alt=""> </a> </div>
+      </div>
+      <!--=== End Header Navigation ===-->
+      
+      <!--=== Collect the nav links, forms, and other content for toggling ===-->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+          <li><a class="page-scroll page-scroll-color" href="index.html">Home</a></li>
+          <li><a class="page-scroll page-scroll-color" href="index.html#about	">About</a></li>
+          <li><a class="page-scroll page-scroll-color" href="index.html#services">Services</a></li>
+          <li><a class="page-scroll page-scroll-color" href="index.html#contact">Contact</a></li>
+		  <li><span id="space-nav"></span></li>
+		  <li class="request-quote-nav-btn btn-color btn-circle request-quote-nav-animate request-quote-nav"><a href="#" class="request-quote-nav-a page-scroll"><span>Request a Quote <!--<i class="mdi mdi-arrow-right"></i>--></a></span></li>
+		  <li><span id="horizontal-line-nav"></span></li>
+		  <li class="tel-nav"><span><a href="tel:+1-647-648-4886" class="tel-rel-nav"><img src="assets/imgs/call-icon.png">&nbsp;&nbsp;+1-647-648-4886</a></li>
+		</ul>
+
+      </div>
+      <!--=== /.navbar-collapse ===-->
+    </div>
+  </nav>
+  <!--=== Header End ===-->
+  <!--=== Get Quote Starts ===-->
+  <section class="contact-us" id="quote">
+	<div class="container">
+	  <div class="row">
+		<div class="row">
+		  <div class="col-sm-8 section-heading">
+			  <h2 class="text-uppercase wow fadeTop testimonials-heading-style" data-wow-delay="0.1s">Request a Quote</h2>
+			  <h4 class="text-uppercase source-font wow fadeTop single-liner-heading" data-wow-delay="0.2s">- Please provide information below -</h4>
+		  </div>
+		</div>
+        <div class="col-md-11  col-md-offset-1">
+          <form name="quote-form" id="quote-form" action="php/quote.php" method="POST" class="contact-me">
+			<div class="single-liner-required">
+				<p><span class="single-liner-staric">*</span> <span class="single-liner-message">Fields are required</span></p>
+			</div>
+			<div class="spacer-div-quote"></div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-6">
+					<div class="form-group">
+					  <label class="sr-only" for="name">Name</label>
+					  <input type="text" name="name" class="form-control" id="name" required placeholder="Full Name" data-error="Your Complete Name is Required">
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group">
+					  <label class="sr-only" for="email">Email</label>
+					  <input type="email" name="email" class="form-control" id="email" placeholder="Email" required data-error="Please Enter Valid Email">
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-6">
+					<div class="form-group">
+					  <label class="sr-only" for="number">Number</label>
+					  <input type="number" name="number" class="form-control" id="number" placeholder="Contact Number">
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group select-group">
+					  <label class="sr-only" for="contract">Contract</label>
+					  <select name="contract" id="contract" class="form-control-select">
+						  <option selected disabled hidden style="display: none">Residential / Commercial</option>
+						  <option value="Residential">Residential</option>
+						  <option value="Commercial">Commercial</option>
+					  </select>
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-12">
+					<p>&nbsp;&nbsp;&nbsp;We currently only provide services in Ontario, Canada.</p>
+					<div class="form-group select-group">
+					  <label class="sr-only" for="address">Address</label>
+					  <input type="text" name="address" class="form-control" id="address" placeholder="Address">
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-6">
+					<div class="form-group select-group">
+					  <label class="sr-only" for="city">City</label>
+					  <select name="city" id="city" class="form-control-select" >
+						  <option selected disabled hidden style="display: none">City / State</option>
+						  <option value="Ajax">Ajax</option>
+						  <option value="Brampton">Brampton</option>
+						  <option value="Caledon">Caledon</option>
+						  <option value="Concord">Concord</option>
+						  <option value="Eastyork">East York</option>
+						  <option value="Etobicoke">Etobicoke</option>
+						  <option value="Georgetown">Georgetown</option>
+						  <option value="Hamilton">Hamilton</option>
+						  <option value="Malton">Malton</option>
+						  <option value="Maple">Maple</option>
+						  <option value="Markham">Markham</option>
+						  <option value="Milton">Milton</option>
+						  <option value="Mississauga">Mississauga</option>
+						  <option value="Northyork">Northyork</option>
+						  <option value="Oakville">Oakville</option>
+						  <option value="Oshawa">Oshawa</option>
+						  <option value="Pickering">Pickering</option>
+						  <option value="Scarborough">Scarborough</option>
+						  <option value="Thornhill">Thornhill</option>
+						  <option value="Whitby">Whitby</option>
+						  <option value="Woodbridge">Woodbridge</option>
+						  <option value="York">York</option>
+					  </select>
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group select-group">
+					  <label class="sr-only" for="zip">Zip</label>
+					  <input type="number" name="zip" class="form-control" id="zip" placeholder="Zip / Postal Code">
+					  <div class="help-block with-errors mt-20"></div>
+					  <div class="help-block with-errors mt-20"></div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-6">
+					<p>&nbsp;&nbsp;&nbsp;If you city/state is not listed we don't provide services in those areas. <a href="index.html#contact" class="page-scroll tab-detail-style"><br>&nbsp;&nbsp;&nbsp;Contact Us</a> for more details.</p>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group select-group">
+					  <label class="sr-only" for="area">Select Area Sq/Ft</label>
+						  <select name="sqfeet" id="sqfeet" class="form-control-select">
+							  <option selected disabled hidden style="display: none">Select Area Sq.Ft</option>
+							  <option value="1000">1000</option>
+							  <option value="1500">1500</option>
+							  <option value="2000">2000</option>
+							  <option value="2500">2500</option>
+							  <option value="3000">3000</option>
+							  <option value="3500">3500</option>
+							  <option value="4000">4000</option>
+							  <option value="4500">4500</option>
+							  <option value="5000">5000</option>
+							  <option value="6000">6000</option>
+							  <option value="7000">7000</option>
+							  <option value="8000">8000</option>
+							  <option value="9000">9000</option>
+							  <option value="10,000">10,000</option>
+							  <option value="11,000">11,000</option>
+							  <option value="12,000">12,000</option>
+							  <option value="13,000">13,0000</option>
+							  <option value="14,000">14,000</option>
+							  <option value="15,000 and above">15,000 and above</option>
+						  </select>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				<hr class="horizontal-line">
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-6">
+					<p class="para-liner">&nbsp;&nbsp;&nbsp;Select the <a href="index.html#services" class="liner-detail-style">services</a> you are interested in.</p>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+				  <div class="col-md-12 row-threes">
+				    <div class="col-md-4">
+						<label class="containeer format-text">AIR VENT CLEANING
+						  <input type="checkbox" name="service-select[]" value="Air Vent Cleaning">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">HERBAL SATISFACTION
+						  <input type="checkbox" name="service-select[]" value="Herbal Satisfaction">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">FURNANCE CLEANING AND REPAIR
+						  <input type="checkbox" name="service-select[]" value="Furnance Cleaning and Repair">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				  </div>
+				  <div class="col-md-12 row-threes">
+				    <div class="col-md-4">
+						<label class="containeer format-text">HUMIDIFIER INSTALLATION AND REPAIR
+						  <input type="checkbox" name="service-select[]" value="Humidifier Installation and Repair">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">HVAC SYSTEM ADDONS INSTALLATION
+						  <input type="checkbox" name="service-select[]" value="HVAC System Addons Installation">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">GAS PIPING AND APPLIANCE INSTALLATION
+						  <input type="checkbox" name="service-select[]" value="Gas Piping and Appliance Installation">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				  </div>
+				  <div class="col-md-12 row-threes">
+				    <div class="col-md-4">
+						<label class="containeer format-text">CENTRAL VACUUM CLEANING
+						  <input type="checkbox" name="service-select[]" value="Central Vacuum Cleaning">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">DYER VENT CLEANING
+						  <input type="checkbox" name="service-select[]" value="Dyer Vent Cleaning">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				    <div class="col-md-4">
+						<label class="containeer format-text">BATHROOM EXHAUST CLEANING
+						  <input type="checkbox" name="service-select[]" value="Bathroom Exhaust Cleaning">
+						  <span class="checkmark"></span>
+						</label>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+			  <div class="col-md-12">
+				<div class="form-group">
+				  <label class="sr-only" for="message">Additional Information or Message</label>
+				  <textarea name="message" class="form-control" id="message" rows="7" placeholder="Additional Information or Message	" required data-error="Please, Leave us a message"></textarea>
+				  <div class="help-block with-errors mt-20"></div>
+				</div>
+				<div class="text-left">
+				  <button type="submit" name="submit" class="btn page-scroll btn-color-quote btn-circle btn-animate btn-float-left btn-service-updt disabled"><span>Get Quote <i class="mdi mdi-arrow-right"></i></span></button>
+				</div>
+				<div class="messages"></div>
+			  </div>
+			</div>
+          </form>
+        </div><!--=== Column ===-->
+	  </div><!--=== Row ===-->
+	</div><!--=== Container ===-->
+  </section>
+  <!--=== Get Quote End ===-->
+  <!--=== Footer Start ======-->
+  <footer class="footer" id="footer-fixed">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="widget widget-text">
+              <div class="logo logo-footer"><a href="index.html#home" class="page-scroll"> <img class="logo logo-display" src="assets/imgs/header-logo.png" alt=""></a> </div>
+              <p class="footer-para-style">Can Duct Cleaning have been providing professional air duct cleaning, dryer vent cleaning, and more to residential and commercial properties since December 2014.
+			  </p>
+			  <p class="footer-para-style">
+			  We deliver top quality service, utilizing truck mounted duct cleaning system. We have the highest standard of customer satisfaction. With experienced & Licensed Furnace Technician, our highly trained professionals can tackle any residential and commercial HVAC ductwork or ventilation cleaning project.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-2">
+            <div class="widget widget-links">
+              <h5 class="widget-title">Hire Us</h5>
+              <ul>
+                <li><a href="index.html#about" class="page-scroll">ABOUT</a></li>
+                <li><a href="index.html#services" class="page-scroll">SERVICES</a></li>
+                <li><a href="getquote.html" class="page-scroll">GET A QUOTE</a></li>
+                <li><a href="index.html#contact" class="page-scroll">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="widget widget-text widget-links">
+              <h5 class="widget-title">Contact Us</h5>
+              <ul>
+                <li> <img src="assets/imgs/footer-location-icon.png"> &nbsp;&nbsp;&nbsp; <span class="footer-widget-style">Suite-707, 600 Lolita Gardens,
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				Mississauga, ON L5A3K*</span> </li>
+                <li> <img src="assets/imgs/footer-call-icon.png"> &nbsp;&nbsp;&nbsp; <a href="tel:+1-647-648-4886">+1-647-648-4886</a> </li>
+                <li> <img src="assets/imgs/footer-email-icon.png"> &nbsp;&nbsp;&nbsp; <a href="mailto:info@canductcleaning.ca">info@canductcleaning.ca</a> </li>
+                <li> <i class="mdi mdi-web"></i> <a href="index.html" class="page-scroll">www.canductcleaning.ca</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/profile.php?id=100009222854956" class="fa fa-facebook" target="_blank"></a></li>
+              <li><a href="http://twitter.com/Canductcleaning" class="fa fa-twitter" target="_blank"></a></li>
+              <li><a href="http://instagram.com/canductcleaning" class="fa fa-instagram" target="_blank"></a></li>
+              <li><a href="callto://Can_duct_cleanning" class="fa fa-skype"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <div class="copy-right text-right">© 2019 CANDUCTCLEANING. All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=== Footer End ======-->
+  
+  <!--=== GO TO TOP  ===-->
+  <a href="#" id="back-to-top" title="Back to top">&#8673;</a>
+  <!--=== GO TO TOP End ===-->
+  
+</div>
+<!--=== Wrapper End ======-->
+
+<!--=== Javascript Plugins ======-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/smoothscroll.js"></script>
+<script src="assets/js/validator.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/master.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+<!--=== Javascript Plugins End ======-->
+
+</body>
+</html>
